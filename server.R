@@ -41,14 +41,14 @@ shinyServer(function(input, output, session) {
             
             # Generate a column for with Science % of grades
             wsci <- round(100 * prop.table(table(subset(data(),                #
-                group = "Schools w/Science", select = grades))), 1)
+                group == "Schools w/Science", select = grades))), 1)
             
         )
         isolate(
             
             # Generate a column for without Science % of grades
             wosci <- round(100 * prop.table(table(subset(data(),                   #
-                    group = "Schools w/o Science", select = grades))), 1)
+                    group == "Schools w/o Science", select = grades))), 1)
         )
         isolate(
             
