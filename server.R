@@ -1,7 +1,7 @@
 library("shiny"); library("ggplot2"); library("plyr")
 source("simdata.R")
 
-if ("markdown" %in% rownames(installed.packages()) == FALSE) install.packages("markdown", dep = TRUE)
+if ("rmarkdown" %in% rownames(installed.packages()) == FALSE) devtools::install_github("rstudio/rmarkdown")
 
 # Set random number seed
 # set.seed(7779311)
