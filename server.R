@@ -1,6 +1,8 @@
 library("shiny"); library("ggplot2"); library("plyr")
 source("simdata.R")
 
+if ("markdown" %in% rownames(installed.packages()) == FALSE) install.packages("markdown", dep = TRUE)
+
 # Set random number seed
 # set.seed(7779311)
 
