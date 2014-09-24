@@ -37,7 +37,7 @@ shinyUI(fluidPage(
                         choices = c("Not at All", "Somewhat", "Very"),  
                         multiple = FALSE, selected = "Somewhat"),
 
-            sliderInput("barsi", label = "How many points should each bar span:",
+            sliderInput("binsi", label = "How many points should each bar span:",
                         min = 1, max = 10, value = 5, step = 1),
             
             helpText("The graphs and tables will only change ",
