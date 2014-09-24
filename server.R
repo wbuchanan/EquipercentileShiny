@@ -3,6 +3,9 @@ source("simdata.R")
 
 if ("rmarkdown" %in% rownames(installed.packages()) == FALSE) devtools::install_github("rstudio/rmarkdown")
 
+# Load the markdown library
+library("rmarkdown")
+
 # Set random number seed
 # set.seed(7779311)
 
